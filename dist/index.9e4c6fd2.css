@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  padding: 0 10px;
+}
+
+.header {
+  border: 1px solid;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.logo-container {
+  width: 150px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.nav-items ul {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.res-card {
+  cursor: pointer;
+  background-color: #f6f6f6;
+  width: 200px;
+  padding: 5px;
+}
+
+.res-card:hover {
+  border: 1px solid;
+}
+
+.search {
+  padding: 10px 0;
+}
+
+.food-image {
+  width: 100%;
+}
+
+.restaurant-container {
+  flex-wrap: wrap;
+  margin: 5px;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
