@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"j2WyO":[function(require,module,exports) {
+})({"bgABq":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "f8a609f57826abd7";
+module.bundle.HMR_BUNDLE_ID = "7fb4cd117271efb6";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -2935,11 +2935,11 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"2Ew96":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c1db = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"2kQhy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c1db.prelude(module);
+$parcel$ReactRefreshHelpers$f00f.prelude(module);
 
 try {
 // * HMR : Hot Modle Reload
@@ -2962,7 +2962,11 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _indexCss = require("./index.css");
+var _indexCss = require("../index.css");
+var _body = require("./components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
+var _header = require("./components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
 // const heading = React.createElement(
 //     "h1",
 //     {
@@ -2984,8 +2988,8 @@ var _indexCss = require("./index.css");
 const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     children: "Hello From JSX"
 }, void 0, false, {
-    fileName: "App.js",
-    lineNumber: 40,
+    fileName: "src/App.js",
+    lineNumber: 42,
     columnNumber: 20
 }, undefined);
 console.log(jsxHeading, "jsx heading");
@@ -2999,1192 +3003,1053 @@ const imagePrefix = "https://media-assets.swiggy.com/swiggy/image/upload/fl_loss
 // );
 // Grouping components together is called component composition
 // <><Title /> <Main />   </>   //this is component composition
-const restaurantData = {
-    restaurants: [
-        {
-            info: {
-                id: "182098",
-                name: "Desiaan",
-                cloudinaryImageId: "miio5vuvqigjxijti4sl",
-                locality: "Civil Lines",
-                areaName: "Barabanki Locality",
-                costForTwo: "\u20B9250 for two",
-                cuisines: [
-                    "North Indian",
-                    "South Indian",
-                    "Chinese",
-                    "Snacks",
-                    "Beverages",
-                    "Thai"
-                ],
-                avgRating: 3.6,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "182098",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "71350",
-                avgRatingString: "3.6",
-                totalRatingsString: "1K+",
-                sla: {
-                    deliveryTime: 25,
-                    lastMileTravel: 3,
-                    serviceability: "SERVICEABLE",
-                    slaString: "25 mins",
-                    lastMileTravelString: "3.0 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 22:30:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "20% OFF",
-                    subHeader: "UPTO \u20B950"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/desiaan-civil-lines-barabanki-locality-bharabanki-182098",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "182107",
-                name: "Punjabi Dhaba",
-                cloudinaryImageId: "vfedrcndulbuhbj73yqs",
-                locality: "Haidergarh Road \n",
-                areaName: "Lakhpedabagh",
-                costForTwo: "\u20B9200 for two",
-                cuisines: [
-                    "North Indian",
-                    "South Indian",
-                    "Chinese",
-                    "Snacks",
-                    "Beverages",
-                    "Thai"
-                ],
-                avgRating: 3.6,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "182107",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "1476",
-                avgRatingString: "3.6",
-                totalRatingsString: "1K+",
-                sla: {
-                    deliveryTime: 20,
-                    lastMileTravel: 1.1,
-                    serviceability: "SERVICEABLE",
-                    slaString: "20 mins",
-                    lastMileTravelString: "1.1 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 16:00:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "\u20B9125 OFF",
-                    subHeader: "ABOVE \u20B9199",
-                    discountTag: "FLAT DEAL"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/punjabi-dhaba-haidergarh-road-lakhpedabagh-bharabanki-182107",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "182118",
-                name: "Krishna Sweets",
-                cloudinaryImageId: "tu8ts5z2p3fn71z4s0ms",
-                locality: "Haidergarh Road \n",
-                areaName: "Moharipur",
-                costForTwo: "\u20B9150 for two",
-                cuisines: [
-                    "Sweets",
-                    "Desserts",
-                    "Snacks",
-                    "Fast Food",
-                    "Indian",
-                    "Beverages"
-                ],
-                avgRating: 3.7,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "182118",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "120982",
-                avgRatingString: "3.7",
-                totalRatingsString: "500+",
-                sla: {
-                    deliveryTime: 20,
-                    lastMileTravel: 1.1,
-                    serviceability: "SERVICEABLE",
-                    slaString: "20 mins",
-                    lastMileTravelString: "1.1 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 21:00:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/krishna-sweets-haidergarh-road-moharipur-bharabanki-182118",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "355485",
-                name: "Pizza Cave",
-                cloudinaryImageId: "k14fwsl1lc3cgtsm4aoh",
-                locality: "Deva Road",
-                areaName: "Rafi Nagar",
-                costForTwo: "\u20B9200 for two",
-                cuisines: [
-                    "Pizzas",
-                    "Beverages",
-                    "Snacks",
-                    "Pastas"
-                ],
-                avgRating: 3.9,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "355485",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "8184",
-                avgRatingString: "3.9",
-                totalRatingsString: "1K+",
-                sla: {
-                    deliveryTime: 25,
-                    lastMileTravel: 2.8,
-                    serviceability: "SERVICEABLE",
-                    slaString: "25 mins",
-                    lastMileTravelString: "2.8 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 22:00:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "\u20B9150 OFF",
-                    subHeader: "ABOVE \u20B9249",
-                    discountTag: "FLAT DEAL"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/pizza-cave-deva-road-rafi-nagar-bharabanki-355485",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "300847",
-                name: "Kwality Walls Frozen Dessert and Ice Cream Shop",
-                cloudinaryImageId: "ieuxbjatd8yrufm3me4t",
-                locality: "Hazratganj",
-                areaName: "Nawabganj",
-                costForTwo: "\u20B9149 for two",
-                cuisines: [
-                    "Desserts",
-                    "Ice Cream",
-                    "Ice Cream Cakes"
-                ],
-                avgRating: 4.5,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "300847",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "582",
-                avgRatingString: "4.5",
-                totalRatingsString: "500+",
-                sla: {
-                    deliveryTime: 23,
-                    lastMileTravel: 1.9,
-                    serviceability: "SERVICEABLE",
-                    slaString: "23 mins",
-                    lastMileTravelString: "1.9 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 23:00:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "50% OFF",
-                    subHeader: "UPTO \u20B9100"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/kwality-walls-frozen-dessert-and-ice-cream-shop-hazratganj-nawabganj-bharabanki-300847",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "202074",
-                name: "Common Room Cafe",
-                cloudinaryImageId: "awlo8vccl4lk3evpnuye",
-                locality: "Nawabganj",
-                areaName: "Lakhpedabagh",
-                costForTwo: "\u20B9199 for two",
-                cuisines: [
-                    "North Indian",
-                    "Indian",
-                    "Chinese",
-                    "Snacks",
-                    "Beverages",
-                    "Thai"
-                ],
-                avgRating: 3.7,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "202074",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "64826",
-                avgRatingString: "3.7",
-                totalRatingsString: "500+",
-                sla: {
-                    deliveryTime: 25,
-                    lastMileTravel: 2.8,
-                    serviceability: "SERVICEABLE",
-                    slaString: "25 mins",
-                    lastMileTravelString: "2.8 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 23:00:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/common-room-cafe-nawabganj-lakhpedabagh-bharabanki-202074",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "398540",
-                name: "Krishna restaurant and sweets ",
-                cloudinaryImageId: "axj1yuiejzx185eicfr5",
-                locality: "Lakhperabhag \n",
-                areaName: "Neem Chauraha",
-                costForTwo: "\u20B9199 for two",
-                cuisines: [
-                    "North Indian",
-                    "South Indian",
-                    "Punjabi",
-                    "Indian",
-                    "Snacks",
-                    "Beverages"
-                ],
-                avgRating: 3.6,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "398540",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "249089",
-                avgRatingString: "3.6",
-                totalRatingsString: "500+",
-                sla: {
-                    deliveryTime: 23,
-                    lastMileTravel: 2.2,
-                    serviceability: "SERVICEABLE",
-                    slaString: "23 mins",
-                    lastMileTravelString: "2.2 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 22:00:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/krishna-restaurant-and-sweets-lakhperabhag-neem-chauraha-bharabanki-398540",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "314077",
-                name: "Hotel Royal Realite",
-                cloudinaryImageId: "u5vhyzrmtdbneftkiosm",
-                locality: "Civil Lines",
-                areaName: "Barabanki Locality",
-                costForTwo: "\u20B9350 for two",
-                cuisines: [
-                    "North Indian",
-                    "South Indian",
-                    "Chinese",
-                    "Snacks",
-                    "Beverages",
-                    "Thai"
-                ],
-                avgRating: 4.1,
-                feeDetails: {
-                    restaurantId: "314077",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "101643",
-                avgRatingString: "4.1",
-                totalRatingsString: "100+",
-                sla: {
-                    deliveryTime: 27,
-                    lastMileTravel: 3.9,
-                    serviceability: "SERVICEABLE",
-                    slaString: "27 mins",
-                    lastMileTravelString: "3.9 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 22:00:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/hotel-royal-realite-civil-lines-barabanki-locality-bharabanki-314077",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "255762",
-                name: "New Shere punjab (Front of stadium)",
-                cloudinaryImageId: "obhauhtr8h4msfkallc7",
-                locality: "Faizabad Road",
-                areaName: "Begum Gunj",
-                costForTwo: "\u20B9199 for two",
-                cuisines: [
-                    "North Indian",
-                    "South Indian",
-                    "Chinese",
-                    "Snacks",
-                    "Beverages",
-                    "Thai"
-                ],
-                avgRating: 3.9,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "255762",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "147964",
-                avgRatingString: "3.9",
-                totalRatingsString: "100+",
-                sla: {
-                    deliveryTime: 23,
-                    lastMileTravel: 1.9,
-                    serviceability: "SERVICEABLE",
-                    slaString: "23 mins",
-                    lastMileTravelString: "1.9 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 22:00:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/new-shere-punjab-front-of-stadium-faizabad-road-begum-gunj-bharabanki-255762",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "368236",
-                name: "Domino's Pizza",
-                cloudinaryImageId: "onyginemm8mz04wpry57",
-                locality: "Faizabad Road",
-                areaName: "Nawabganj",
-                costForTwo: "\u20B9400 for two",
-                cuisines: [
-                    "Pizzas",
-                    "Italian",
-                    "Pastas",
-                    "Desserts"
-                ],
-                avgRating: 4.2,
-                feeDetails: {
-                    restaurantId: "368236",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "2456",
-                avgRatingString: "4.2",
-                totalRatingsString: "500+",
-                sla: {
-                    deliveryTime: 25,
-                    serviceability: "SERVICEABLE",
-                    slaString: "25 mins",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 23:00:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "\u20B9100 OFF",
-                    subHeader: "ABOVE \u20B9999",
-                    discountTag: "FLAT DEAL"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/dominos-pizza-faizabad-road-nawabganj-bharabanki-368236",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "182321",
-                name: "Flavour Restaurant",
-                cloudinaryImageId: "uj6fruo5789zlht7qcxh",
-                locality: "Civil Lines",
-                areaName: "Chhaya Chauraha",
-                costForTwo: "\u20B9250 for two",
-                cuisines: [
-                    "North Indian",
-                    "South Indian",
-                    "Punjabi",
-                    "Indian",
-                    "Snacks",
-                    "Beverages"
-                ],
-                avgRating: 3.9,
-                veg: true,
-                feeDetails: {
-                    restaurantId: "182321",
-                    fees: [
-                        {
-                            name: "BASE_DISTANCE",
-                            fee: 1700
-                        },
-                        {
-                            name: "BASE_TIME"
-                        },
-                        {
-                            name: "ANCILLARY_SURGE_FEE"
-                        }
-                    ],
-                    totalFee: 1700
-                },
-                parentId: "80350",
-                avgRatingString: "3.9",
-                totalRatingsString: "1K+",
-                sla: {
-                    deliveryTime: 25,
-                    lastMileTravel: 2.8,
-                    serviceability: "SERVICEABLE",
-                    slaString: "25 mins",
-                    lastMileTravelString: "2.8 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2023-11-23 22:30:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/flavour-restaurant-civil-lines-chhaya-chauraha-bharabanki-182321",
-                type: "WEBLINK"
-            }
-        }
-    ]
-};
+// const restaurantData = {
+//   restaurants: [
+//     {
+//       info: {
+//         id: "182098",
+//         name: "Desiaan",
+//         cloudinaryImageId: "miio5vuvqigjxijti4sl",
+//         locality: "Civil Lines",
+//         areaName: "Barabanki Locality",
+//         costForTwo: "₹250 for two",
+//         cuisines: [
+//           "North Indian",
+//           "South Indian",
+//           "Chinese",
+//           "Snacks",
+//           "Beverages",
+//           "Thai",
+//         ],
+//         avgRating: 3.6,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "182098",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "71350",
+//         avgRatingString: "3.6",
+//         totalRatingsString: "1K+",
+//         sla: {
+//           deliveryTime: 25,
+//           lastMileTravel: 3,
+//           serviceability: "SERVICEABLE",
+//           slaString: "25 mins",
+//           lastMileTravelString: "3.0 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 22:30:00",
+//           opened: true,
+//         },
+//         badges: {
+//           imageBadges: [
+//             {
+//               imageId: "v1695133679/badges/Pure_Veg111.png",
+//               description: "pureveg",
+//             },
+//           ],
+//         },
+//         isOpen: true,
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {
+//               badgeObject: [
+//                 {
+//                   attributes: {
+//                     description: "pureveg",
+//                     imageId: "v1695133679/badges/Pure_Veg111.png",
+//                   },
+//                 },
+//               ],
+//             },
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         aggregatedDiscountInfoV3: {
+//           header: "20% OFF",
+//           subHeader: "UPTO ₹50",
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/desiaan-civil-lines-barabanki-locality-bharabanki-182098",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "182107",
+//         name: "Punjabi Dhaba",
+//         cloudinaryImageId: "vfedrcndulbuhbj73yqs",
+//         locality: "Haidergarh Road \n",
+//         areaName: "Lakhpedabagh",
+//         costForTwo: "₹200 for two",
+//         cuisines: [
+//           "North Indian",
+//           "South Indian",
+//           "Chinese",
+//           "Snacks",
+//           "Beverages",
+//           "Thai",
+//         ],
+//         avgRating: 3.6,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "182107",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "1476",
+//         avgRatingString: "3.6",
+//         totalRatingsString: "1K+",
+//         sla: {
+//           deliveryTime: 20,
+//           lastMileTravel: 1.1,
+//           serviceability: "SERVICEABLE",
+//           slaString: "20 mins",
+//           lastMileTravelString: "1.1 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 16:00:00",
+//           opened: true,
+//         },
+//         badges: {
+//           imageBadges: [
+//             {
+//               imageId: "v1695133679/badges/Pure_Veg111.png",
+//               description: "pureveg",
+//             },
+//           ],
+//         },
+//         isOpen: true,
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {
+//               badgeObject: [
+//                 {
+//                   attributes: {
+//                     description: "pureveg",
+//                     imageId: "v1695133679/badges/Pure_Veg111.png",
+//                   },
+//                 },
+//               ],
+//             },
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         aggregatedDiscountInfoV3: {
+//           header: "₹125 OFF",
+//           subHeader: "ABOVE ₹199",
+//           discountTag: "FLAT DEAL",
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/punjabi-dhaba-haidergarh-road-lakhpedabagh-bharabanki-182107",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "182118",
+//         name: "Krishna Sweets",
+//         cloudinaryImageId: "tu8ts5z2p3fn71z4s0ms",
+//         locality: "Haidergarh Road \n",
+//         areaName: "Moharipur",
+//         costForTwo: "₹150 for two",
+//         cuisines: [
+//           "Sweets",
+//           "Desserts",
+//           "Snacks",
+//           "Fast Food",
+//           "Indian",
+//           "Beverages",
+//         ],
+//         avgRating: 3.7,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "182118",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "120982",
+//         avgRatingString: "3.7",
+//         totalRatingsString: "500+",
+//         sla: {
+//           deliveryTime: 20,
+//           lastMileTravel: 1.1,
+//           serviceability: "SERVICEABLE",
+//           slaString: "20 mins",
+//           lastMileTravelString: "1.1 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 21:00:00",
+//           opened: true,
+//         },
+//         badges: {
+//           imageBadges: [
+//             {
+//               imageId: "v1695133679/badges/Pure_Veg111.png",
+//               description: "pureveg",
+//             },
+//           ],
+//         },
+//         isOpen: true,
+//         aggregatedDiscountInfoV2: {},
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {
+//               badgeObject: [
+//                 {
+//                   attributes: {
+//                     description: "pureveg",
+//                     imageId: "v1695133679/badges/Pure_Veg111.png",
+//                   },
+//                 },
+//               ],
+//             },
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/krishna-sweets-haidergarh-road-moharipur-bharabanki-182118",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "355485",
+//         name: "Pizza Cave",
+//         cloudinaryImageId: "k14fwsl1lc3cgtsm4aoh",
+//         locality: "Deva Road",
+//         areaName: "Rafi Nagar",
+//         costForTwo: "₹200 for two",
+//         cuisines: ["Pizzas", "Beverages", "Snacks", "Pastas"],
+//         avgRating: 3.9,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "355485",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "8184",
+//         avgRatingString: "3.9",
+//         totalRatingsString: "1K+",
+//         sla: {
+//           deliveryTime: 25,
+//           lastMileTravel: 2.8,
+//           serviceability: "SERVICEABLE",
+//           slaString: "25 mins",
+//           lastMileTravelString: "2.8 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 22:00:00",
+//           opened: true,
+//         },
+//         badges: {
+//           imageBadges: [
+//             {
+//               imageId: "v1695133679/badges/Pure_Veg111.png",
+//               description: "pureveg",
+//             },
+//           ],
+//         },
+//         isOpen: true,
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {
+//               badgeObject: [
+//                 {
+//                   attributes: {
+//                     description: "pureveg",
+//                     imageId: "v1695133679/badges/Pure_Veg111.png",
+//                   },
+//                 },
+//               ],
+//             },
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         aggregatedDiscountInfoV3: {
+//           header: "₹150 OFF",
+//           subHeader: "ABOVE ₹249",
+//           discountTag: "FLAT DEAL",
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/pizza-cave-deva-road-rafi-nagar-bharabanki-355485",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "300847",
+//         name: "Kwality Walls Frozen Dessert and Ice Cream Shop",
+//         cloudinaryImageId: "ieuxbjatd8yrufm3me4t",
+//         locality: "Hazratganj",
+//         areaName: "Nawabganj",
+//         costForTwo: "₹149 for two",
+//         cuisines: ["Desserts", "Ice Cream", "Ice Cream Cakes"],
+//         avgRating: 4.5,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "300847",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "582",
+//         avgRatingString: "4.5",
+//         totalRatingsString: "500+",
+//         sla: {
+//           deliveryTime: 23,
+//           lastMileTravel: 1.9,
+//           serviceability: "SERVICEABLE",
+//           slaString: "23 mins",
+//           lastMileTravelString: "1.9 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 23:00:00",
+//           opened: true,
+//         },
+//         badges: {},
+//         isOpen: true,
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {},
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         aggregatedDiscountInfoV3: {
+//           header: "50% OFF",
+//           subHeader: "UPTO ₹100",
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/kwality-walls-frozen-dessert-and-ice-cream-shop-hazratganj-nawabganj-bharabanki-300847",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "202074",
+//         name: "Common Room Cafe",
+//         cloudinaryImageId: "awlo8vccl4lk3evpnuye",
+//         locality: "Nawabganj",
+//         areaName: "Lakhpedabagh",
+//         costForTwo: "₹199 for two",
+//         cuisines: [
+//           "North Indian",
+//           "Indian",
+//           "Chinese",
+//           "Snacks",
+//           "Beverages",
+//           "Thai",
+//         ],
+//         avgRating: 3.7,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "202074",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "64826",
+//         avgRatingString: "3.7",
+//         totalRatingsString: "500+",
+//         sla: {
+//           deliveryTime: 25,
+//           lastMileTravel: 2.8,
+//           serviceability: "SERVICEABLE",
+//           slaString: "25 mins",
+//           lastMileTravelString: "2.8 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 23:00:00",
+//           opened: true,
+//         },
+//         badges: {
+//           imageBadges: [
+//             {
+//               imageId: "v1695133679/badges/Pure_Veg111.png",
+//               description: "pureveg",
+//             },
+//           ],
+//         },
+//         isOpen: true,
+//         aggregatedDiscountInfoV2: {},
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {
+//               badgeObject: [
+//                 {
+//                   attributes: {
+//                     description: "pureveg",
+//                     imageId: "v1695133679/badges/Pure_Veg111.png",
+//                   },
+//                 },
+//               ],
+//             },
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/common-room-cafe-nawabganj-lakhpedabagh-bharabanki-202074",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "398540",
+//         name: "Krishna restaurant and sweets ",
+//         cloudinaryImageId: "axj1yuiejzx185eicfr5",
+//         locality: "Lakhperabhag \n",
+//         areaName: "Neem Chauraha",
+//         costForTwo: "₹199 for two",
+//         cuisines: [
+//           "North Indian",
+//           "South Indian",
+//           "Punjabi",
+//           "Indian",
+//           "Snacks",
+//           "Beverages",
+//         ],
+//         avgRating: 3.6,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "398540",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "249089",
+//         avgRatingString: "3.6",
+//         totalRatingsString: "500+",
+//         sla: {
+//           deliveryTime: 23,
+//           lastMileTravel: 2.2,
+//           serviceability: "SERVICEABLE",
+//           slaString: "23 mins",
+//           lastMileTravelString: "2.2 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 22:00:00",
+//           opened: true,
+//         },
+//         badges: {
+//           imageBadges: [
+//             {
+//               imageId: "v1695133679/badges/Pure_Veg111.png",
+//               description: "pureveg",
+//             },
+//           ],
+//         },
+//         isOpen: true,
+//         aggregatedDiscountInfoV2: {},
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {
+//               badgeObject: [
+//                 {
+//                   attributes: {
+//                     description: "pureveg",
+//                     imageId: "v1695133679/badges/Pure_Veg111.png",
+//                   },
+//                 },
+//               ],
+//             },
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/krishna-restaurant-and-sweets-lakhperabhag-neem-chauraha-bharabanki-398540",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "314077",
+//         name: "Hotel Royal Realite",
+//         cloudinaryImageId: "u5vhyzrmtdbneftkiosm",
+//         locality: "Civil Lines",
+//         areaName: "Barabanki Locality",
+//         costForTwo: "₹350 for two",
+//         cuisines: [
+//           "North Indian",
+//           "South Indian",
+//           "Chinese",
+//           "Snacks",
+//           "Beverages",
+//           "Thai",
+//         ],
+//         avgRating: 4.1,
+//         feeDetails: {
+//           restaurantId: "314077",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "101643",
+//         avgRatingString: "4.1",
+//         totalRatingsString: "100+",
+//         sla: {
+//           deliveryTime: 27,
+//           lastMileTravel: 3.9,
+//           serviceability: "SERVICEABLE",
+//           slaString: "27 mins",
+//           lastMileTravelString: "3.9 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 22:00:00",
+//           opened: true,
+//         },
+//         badges: {},
+//         isOpen: true,
+//         aggregatedDiscountInfoV2: {},
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {},
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/hotel-royal-realite-civil-lines-barabanki-locality-bharabanki-314077",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "255762",
+//         name: "New Shere punjab (Front of stadium)",
+//         cloudinaryImageId: "obhauhtr8h4msfkallc7",
+//         locality: "Faizabad Road",
+//         areaName: "Begum Gunj",
+//         costForTwo: "₹199 for two",
+//         cuisines: [
+//           "North Indian",
+//           "South Indian",
+//           "Chinese",
+//           "Snacks",
+//           "Beverages",
+//           "Thai",
+//         ],
+//         avgRating: 3.9,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "255762",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "147964",
+//         avgRatingString: "3.9",
+//         totalRatingsString: "100+",
+//         sla: {
+//           deliveryTime: 23,
+//           lastMileTravel: 1.9,
+//           serviceability: "SERVICEABLE",
+//           slaString: "23 mins",
+//           lastMileTravelString: "1.9 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 22:00:00",
+//           opened: true,
+//         },
+//         badges: {
+//           imageBadges: [
+//             {
+//               imageId: "v1695133679/badges/Pure_Veg111.png",
+//               description: "pureveg",
+//             },
+//           ],
+//         },
+//         isOpen: true,
+//         aggregatedDiscountInfoV2: {},
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {
+//               badgeObject: [
+//                 {
+//                   attributes: {
+//                     description: "pureveg",
+//                     imageId: "v1695133679/badges/Pure_Veg111.png",
+//                   },
+//                 },
+//               ],
+//             },
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/new-shere-punjab-front-of-stadium-faizabad-road-begum-gunj-bharabanki-255762",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "368236",
+//         name: "Domino's Pizza",
+//         cloudinaryImageId: "onyginemm8mz04wpry57",
+//         locality: "Faizabad Road",
+//         areaName: "Nawabganj",
+//         costForTwo: "₹400 for two",
+//         cuisines: ["Pizzas", "Italian", "Pastas", "Desserts"],
+//         avgRating: 4.2,
+//         feeDetails: {
+//           restaurantId: "368236",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "2456",
+//         avgRatingString: "4.2",
+//         totalRatingsString: "500+",
+//         sla: {
+//           deliveryTime: 25,
+//           serviceability: "SERVICEABLE",
+//           slaString: "25 mins",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 23:00:00",
+//           opened: true,
+//         },
+//         badges: {},
+//         isOpen: true,
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {},
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         aggregatedDiscountInfoV3: {
+//           header: "₹100 OFF",
+//           subHeader: "ABOVE ₹999",
+//           discountTag: "FLAT DEAL",
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/dominos-pizza-faizabad-road-nawabganj-bharabanki-368236",
+//         type: "WEBLINK",
+//       },
+//     },
+//     {
+//       info: {
+//         id: "182321",
+//         name: "Flavour Restaurant",
+//         cloudinaryImageId: "uj6fruo5789zlht7qcxh",
+//         locality: "Civil Lines",
+//         areaName: "Chhaya Chauraha",
+//         costForTwo: "₹250 for two",
+//         cuisines: [
+//           "North Indian",
+//           "South Indian",
+//           "Punjabi",
+//           "Indian",
+//           "Snacks",
+//           "Beverages",
+//         ],
+//         avgRating: 3.9,
+//         veg: true,
+//         feeDetails: {
+//           restaurantId: "182321",
+//           fees: [
+//             {
+//               name: "BASE_DISTANCE",
+//               fee: 1700,
+//             },
+//             {
+//               name: "BASE_TIME",
+//             },
+//             {
+//               name: "ANCILLARY_SURGE_FEE",
+//             },
+//           ],
+//           totalFee: 1700,
+//         },
+//         parentId: "80350",
+//         avgRatingString: "3.9",
+//         totalRatingsString: "1K+",
+//         sla: {
+//           deliveryTime: 25,
+//           lastMileTravel: 2.8,
+//           serviceability: "SERVICEABLE",
+//           slaString: "25 mins",
+//           lastMileTravelString: "2.8 km",
+//           iconType: "ICON_TYPE_EMPTY",
+//         },
+//         availability: {
+//           nextCloseTime: "2023-11-23 22:30:00",
+//           opened: true,
+//         },
+//         badges: {
+//           imageBadges: [
+//             {
+//               imageId: "v1695133679/badges/Pure_Veg111.png",
+//               description: "pureveg",
+//             },
+//           ],
+//         },
+//         isOpen: true,
+//         aggregatedDiscountInfoV2: {},
+//         type: "F",
+//         badgesV2: {
+//           entityBadges: {
+//             imageBased: {
+//               badgeObject: [
+//                 {
+//                   attributes: {
+//                     description: "pureveg",
+//                     imageId: "v1695133679/badges/Pure_Veg111.png",
+//                   },
+//                 },
+//               ],
+//             },
+//             textBased: {},
+//             textExtendedBadges: {},
+//           },
+//         },
+//         differentiatedUi: {
+//           displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//           differentiatedUiMediaDetails: {
+//             mediaType: "ADS_MEDIA_ENUM_IMAGE",
+//             lottie: {},
+//             video: {},
+//           },
+//         },
+//         reviewsSummary: {},
+//         displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//         restaurantOfferPresentationInfo: {},
+//       },
+//       analytics: {},
+//       cta: {
+//         link: "https://www.swiggy.com/restaurants/flavour-restaurant-civil-lines-chhaya-chauraha-bharabanki-182321",
+//         type: "WEBLINK",
+//       },
+//     },
+//   ],
+// };
 // Header
-const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "logo-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "logo",
-                    src: "https://cdn.dribbble.com/users/1635051/screenshots/4291569/socio_curry_logo-01.png",
-                    alt: "logo"
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 899,
-                    columnNumber: 7
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 898,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 903,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About Us"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 904,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact Us"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 905,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 906,
-                            columnNumber: 9
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "App.js",
-                    lineNumber: 902,
-                    columnNumber: 7
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 901,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 897,
-        columnNumber: 22
-    }, undefined);
-_c = Header;
-const RestaurantCard = ({ restData })=>{
-    // console.log(restData.restaurants[0].info , "restdata")
-    const { avgRating, cuisines, name, costForTwo, sla, cloudinaryImageId } = restData;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: `${imagePrefix}${cloudinaryImageId}`,
-                className: "food-image",
-                alt: "food"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 923,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: name
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 925,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 926,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: avgRating
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 927,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: sla.slaString
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 928,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: costForTwo
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 929,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 922,
-        columnNumber: 10
-    }, undefined);
-};
-_c1 = RestaurantCard;
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
-                children: "Search"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 934,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-container",
-                children: restaurantData.restaurants.map((res)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        restData: res.info
-                    }, res.info.id, false, {
-                        fileName: "App.js",
-                        lineNumber: 937,
-                        columnNumber: 16
-                    }, undefined);
-                })
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 935,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 933,
-        columnNumber: 10
-    }, undefined);
-};
-_c2 = Body;
+// const RestaurantCard = ({ restData }) => {
+//   // console.log(restData.restaurants[0].info , "restdata")
+//   const { avgRating, cuisines, name, costForTwo, sla, cloudinaryImageId } =
+//     restData;
+//   return (
+//     <div className="res-card">
+//       <img
+//         src={`${imagePrefix}${cloudinaryImageId}`}
+//         className="food-image"
+//         alt="food"
+//       />
+//       <h3>{name}</h3>
+//       <h4>{cuisines.join(", ")}</h4>
+//       <h4>{avgRating}</h4>
+//       <h4>{sla.slaString}</h4>
+//       <h4>{costForTwo}</h4>
+//     </div>
+//   );
+// };
+// const Body = () => {
+//   return (
+//     <div className="body">
+//       <div className="search">Search</div>
+//       <div className="restaurant-container">
+//         {
+//           restaurantData.restaurants.map((res) => {
+//             return <RestaurantCard key={res.info.id} restData={res.info} />;
+//           })
+//         }
+//       </div>
+//     </div>
+//   );
+// };
 const AppLayout = ()=>{
+    console.log(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+        fileName: "src/App.js",
+        lineNumber: 1080,
+        columnNumber: 15
+    }, undefined), "body");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 944,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 1082,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 945,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 1083,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 943,
+        fileName: "src/App.js",
+        lineNumber: 1081,
         columnNumber: 10
     }, undefined);
 };
-_c3 = AppLayout;
+_c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
-    fileName: "App.js",
-    lineNumber: 949,
+    fileName: "src/App.js",
+    lineNumber: 1087,
     columnNumber: 13
 }, undefined)); // root.render(<>
  //   {Title()}
@@ -4194,18 +4059,15 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, fals
  //   <Title />
  //   <Main />
  // </>)
-var _c, _c1, _c2, _c3;
-$RefreshReg$(_c, "Header");
-$RefreshReg$(_c1, "RestaurantCard");
-$RefreshReg$(_c2, "Body");
-$RefreshReg$(_c3, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
-  $parcel$ReactRefreshHelpers$c1db.postlude(module);
+  $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./index.css":"giGSC"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","../index.css":"giGSC","./components/Body":"8yaV8","./components/Header":"hsJbF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -28392,7 +28254,1228 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"giGSC":[function() {},{}],"8yaV8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0606.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// import { restaurantData } from "../data/dummyData";
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _s = $RefreshSig$();
+const Body = ()=>{
+    _s();
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    console.log(searchText, "search Text");
+    const [restData, setRestData] = (0, _react.useState)([]);
+    const [filteredRestaurant, setFilteredRestaurant] = (0, _react.useState)([]); //to resolve the filter issue
+    const handleTopRated = ()=>{
+        const data = restData.filter((res)=>res.info.avgRating > 4);
+        setRestData(data);
+    };
+    const fetchRestaurantData = async ()=>{
+        const resp = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8496217&lng=81.0072193&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const data = await resp.json();
+        const { restaurants } = data.data.cards[2].card.card?.gridElements?.infoWithStyle;
+        setRestData(restaurants);
+        setFilteredRestaurant(restaurants); //to resolve the filter issue
+    };
+    (0, _react.useEffect)(()=>{
+        fetchRestaurantData();
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: restData.length > 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "body",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "search-filter",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "search",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    placeholder: "Search Restaurant",
+                                    value: searchText,
+                                    onChange: (e)=>setSearchText(e.target.value)
+                                }, void 0, false, {
+                                    fileName: "src/components/Body.js",
+                                    lineNumber: 31,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>{
+                                        const searchedRest = restData.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                                        setFilteredRestaurant(searchedRest);
+                                    },
+                                    className: "search-btn",
+                                    children: "Search"
+                                }, void 0, false, {
+                                    fileName: "src/components/Body.js",
+                                    lineNumber: 32,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 30,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "top-rated-btn",
+                                onClick: handleTopRated,
+                                children: "Top Rated Restaurants"
+                            }, void 0, false, {
+                                fileName: "src/components/Body.js",
+                                lineNumber: 40,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 39,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 29,
+                    columnNumber: 11
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "restaurant-container",
+                    children: filteredRestaurant.map((res)=>{
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                            restData: res.info
+                        }, res.info.id, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 47,
+                            columnNumber: 18
+                        }, undefined);
+                    })
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 45,
+                    columnNumber: 11
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Body.js",
+            lineNumber: 28,
+            columnNumber: 30
+        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+            fileName: "src/components/Body.js",
+            lineNumber: 50,
+            columnNumber: 18
+        }, undefined)
+    }, void 0, false);
+};
+_s(Body, "VgrXpM2hMKxDsd1vjAdSJLK9uKQ=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$0606.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj"}],"bMboU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ffb1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _dummyData = require("../data/dummyData");
+const RestaurantCard = ({ restData })=>{
+    const { avgRating, cuisines, name, costForTwo, sla, cloudinaryImageId } = restData;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: `${(0, _dummyData.imagePrefix)}${cloudinaryImageId}`,
+                className: "food-image",
+                alt: "food"
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: avgRating
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: sla.slaString
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: costForTwo
+            }, void 0, false, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantCard.js",
+        lineNumber: 14,
+        columnNumber: 10
+    }, undefined);
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../data/dummyData":"hnsmb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hnsmb":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "restaurantData", ()=>restaurantData);
+parcelHelpers.export(exports, "imagePrefix", ()=>imagePrefix);
+parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+const restaurantData = {
+    restaurants: [
+        {
+            info: {
+                id: "182098",
+                name: "Desiaan",
+                cloudinaryImageId: "miio5vuvqigjxijti4sl",
+                locality: "Civil Lines",
+                areaName: "Barabanki Locality",
+                costForTwo: "\u20B9250 for two",
+                cuisines: [
+                    "North Indian",
+                    "South Indian",
+                    "Chinese",
+                    "Snacks",
+                    "Beverages",
+                    "Thai"
+                ],
+                avgRating: 3.6,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "182098",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "71350",
+                avgRatingString: "3.6",
+                totalRatingsString: "1K+",
+                sla: {
+                    deliveryTime: 25,
+                    lastMileTravel: 3,
+                    serviceability: "SERVICEABLE",
+                    slaString: "25 mins",
+                    lastMileTravelString: "3.0 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 22:30:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "20% OFF",
+                    subHeader: "UPTO \u20B950"
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/desiaan-civil-lines-barabanki-locality-bharabanki-182098",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "182107",
+                name: "Punjabi Dhaba",
+                cloudinaryImageId: "vfedrcndulbuhbj73yqs",
+                locality: "Haidergarh Road \n",
+                areaName: "Lakhpedabagh",
+                costForTwo: "\u20B9200 for two",
+                cuisines: [
+                    "North Indian",
+                    "South Indian",
+                    "Chinese",
+                    "Snacks",
+                    "Beverages",
+                    "Thai"
+                ],
+                avgRating: 3.6,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "182107",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "1476",
+                avgRatingString: "3.6",
+                totalRatingsString: "1K+",
+                sla: {
+                    deliveryTime: 20,
+                    lastMileTravel: 1.1,
+                    serviceability: "SERVICEABLE",
+                    slaString: "20 mins",
+                    lastMileTravelString: "1.1 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 16:00:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "\u20B9125 OFF",
+                    subHeader: "ABOVE \u20B9199",
+                    discountTag: "FLAT DEAL"
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/punjabi-dhaba-haidergarh-road-lakhpedabagh-bharabanki-182107",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "182118",
+                name: "Krishna Sweets",
+                cloudinaryImageId: "tu8ts5z2p3fn71z4s0ms",
+                locality: "Haidergarh Road \n",
+                areaName: "Moharipur",
+                costForTwo: "\u20B9150 for two",
+                cuisines: [
+                    "Sweets",
+                    "Desserts",
+                    "Snacks",
+                    "Fast Food",
+                    "Indian",
+                    "Beverages"
+                ],
+                avgRating: 3.7,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "182118",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "120982",
+                avgRatingString: "3.7",
+                totalRatingsString: "500+",
+                sla: {
+                    deliveryTime: 20,
+                    lastMileTravel: 1.1,
+                    serviceability: "SERVICEABLE",
+                    slaString: "20 mins",
+                    lastMileTravelString: "1.1 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 21:00:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/krishna-sweets-haidergarh-road-moharipur-bharabanki-182118",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "355485",
+                name: "Pizza Cave",
+                cloudinaryImageId: "k14fwsl1lc3cgtsm4aoh",
+                locality: "Deva Road",
+                areaName: "Rafi Nagar",
+                costForTwo: "\u20B9200 for two",
+                cuisines: [
+                    "Pizzas",
+                    "Beverages",
+                    "Snacks",
+                    "Pastas"
+                ],
+                avgRating: 3.9,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "355485",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "8184",
+                avgRatingString: "3.9",
+                totalRatingsString: "1K+",
+                sla: {
+                    deliveryTime: 25,
+                    lastMileTravel: 2.8,
+                    serviceability: "SERVICEABLE",
+                    slaString: "25 mins",
+                    lastMileTravelString: "2.8 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 22:00:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "\u20B9150 OFF",
+                    subHeader: "ABOVE \u20B9249",
+                    discountTag: "FLAT DEAL"
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/pizza-cave-deva-road-rafi-nagar-bharabanki-355485",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "300847",
+                name: "Kwality Walls Frozen Dessert and Ice Cream Shop",
+                cloudinaryImageId: "ieuxbjatd8yrufm3me4t",
+                locality: "Hazratganj",
+                areaName: "Nawabganj",
+                costForTwo: "\u20B9149 for two",
+                cuisines: [
+                    "Desserts",
+                    "Ice Cream",
+                    "Ice Cream Cakes"
+                ],
+                avgRating: 4.5,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "300847",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "582",
+                avgRatingString: "4.5",
+                totalRatingsString: "500+",
+                sla: {
+                    deliveryTime: 23,
+                    lastMileTravel: 1.9,
+                    serviceability: "SERVICEABLE",
+                    slaString: "23 mins",
+                    lastMileTravelString: "1.9 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "50% OFF",
+                    subHeader: "UPTO \u20B9100"
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/kwality-walls-frozen-dessert-and-ice-cream-shop-hazratganj-nawabganj-bharabanki-300847",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "202074",
+                name: "Common Room Cafe",
+                cloudinaryImageId: "awlo8vccl4lk3evpnuye",
+                locality: "Nawabganj",
+                areaName: "Lakhpedabagh",
+                costForTwo: "\u20B9199 for two",
+                cuisines: [
+                    "North Indian",
+                    "Indian",
+                    "Chinese",
+                    "Snacks",
+                    "Beverages",
+                    "Thai"
+                ],
+                avgRating: 3.7,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "202074",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "64826",
+                avgRatingString: "3.7",
+                totalRatingsString: "500+",
+                sla: {
+                    deliveryTime: 25,
+                    lastMileTravel: 2.8,
+                    serviceability: "SERVICEABLE",
+                    slaString: "25 mins",
+                    lastMileTravelString: "2.8 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 23:00:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/common-room-cafe-nawabganj-lakhpedabagh-bharabanki-202074",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "398540",
+                name: "Krishna restaurant and sweets ",
+                cloudinaryImageId: "axj1yuiejzx185eicfr5",
+                locality: "Lakhperabhag \n",
+                areaName: "Neem Chauraha",
+                costForTwo: "\u20B9199 for two",
+                cuisines: [
+                    "North Indian",
+                    "South Indian",
+                    "Punjabi",
+                    "Indian",
+                    "Snacks",
+                    "Beverages"
+                ],
+                avgRating: 3.6,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "398540",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "249089",
+                avgRatingString: "3.6",
+                totalRatingsString: "500+",
+                sla: {
+                    deliveryTime: 23,
+                    lastMileTravel: 2.2,
+                    serviceability: "SERVICEABLE",
+                    slaString: "23 mins",
+                    lastMileTravelString: "2.2 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 22:00:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/krishna-restaurant-and-sweets-lakhperabhag-neem-chauraha-bharabanki-398540",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "314077",
+                name: "Hotel Royal Realite",
+                cloudinaryImageId: "u5vhyzrmtdbneftkiosm",
+                locality: "Civil Lines",
+                areaName: "Barabanki Locality",
+                costForTwo: "\u20B9350 for two",
+                cuisines: [
+                    "North Indian",
+                    "South Indian",
+                    "Chinese",
+                    "Snacks",
+                    "Beverages",
+                    "Thai"
+                ],
+                avgRating: 4.1,
+                feeDetails: {
+                    restaurantId: "314077",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "101643",
+                avgRatingString: "4.1",
+                totalRatingsString: "100+",
+                sla: {
+                    deliveryTime: 27,
+                    lastMileTravel: 3.9,
+                    serviceability: "SERVICEABLE",
+                    slaString: "27 mins",
+                    lastMileTravelString: "3.9 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 22:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/hotel-royal-realite-civil-lines-barabanki-locality-bharabanki-314077",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "255762",
+                name: "New Shere punjab (Front of stadium)",
+                cloudinaryImageId: "obhauhtr8h4msfkallc7",
+                locality: "Faizabad Road",
+                areaName: "Begum Gunj",
+                costForTwo: "\u20B9199 for two",
+                cuisines: [
+                    "North Indian",
+                    "South Indian",
+                    "Chinese",
+                    "Snacks",
+                    "Beverages",
+                    "Thai"
+                ],
+                avgRating: 3.9,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "255762",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "147964",
+                avgRatingString: "3.9",
+                totalRatingsString: "100+",
+                sla: {
+                    deliveryTime: 23,
+                    lastMileTravel: 1.9,
+                    serviceability: "SERVICEABLE",
+                    slaString: "23 mins",
+                    lastMileTravelString: "1.9 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 22:00:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/new-shere-punjab-front-of-stadium-faizabad-road-begum-gunj-bharabanki-255762",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "368236",
+                name: "Domino's Pizza",
+                cloudinaryImageId: "onyginemm8mz04wpry57",
+                locality: "Faizabad Road",
+                areaName: "Nawabganj",
+                costForTwo: "\u20B9400 for two",
+                cuisines: [
+                    "Pizzas",
+                    "Italian",
+                    "Pastas",
+                    "Desserts"
+                ],
+                avgRating: 4.2,
+                feeDetails: {
+                    restaurantId: "368236",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "2456",
+                avgRatingString: "4.2",
+                totalRatingsString: "500+",
+                sla: {
+                    deliveryTime: 25,
+                    serviceability: "SERVICEABLE",
+                    slaString: "25 mins",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "\u20B9100 OFF",
+                    subHeader: "ABOVE \u20B9999",
+                    discountTag: "FLAT DEAL"
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/dominos-pizza-faizabad-road-nawabganj-bharabanki-368236",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "182321",
+                name: "Flavour Restaurant",
+                cloudinaryImageId: "uj6fruo5789zlht7qcxh",
+                locality: "Civil Lines",
+                areaName: "Chhaya Chauraha",
+                costForTwo: "\u20B9250 for two",
+                cuisines: [
+                    "North Indian",
+                    "South Indian",
+                    "Punjabi",
+                    "Indian",
+                    "Snacks",
+                    "Beverages"
+                ],
+                avgRating: 3.9,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "182321",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1700
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1700
+                },
+                parentId: "80350",
+                avgRatingString: "3.9",
+                totalRatingsString: "1K+",
+                sla: {
+                    deliveryTime: 25,
+                    lastMileTravel: 2.8,
+                    serviceability: "SERVICEABLE",
+                    slaString: "25 mins",
+                    lastMileTravelString: "2.8 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-11-23 22:30:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/flavour-restaurant-civil-lines-chhaya-chauraha-bharabanki-182321",
+                type: "WEBLINK"
+            }
+        }
+    ]
+};
+const imagePrefix = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const LOGO_URL = "https://cdn.dribbble.com/users/1635051/screenshots/4291569/socio_curry_logo-01.png";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -28560,6 +29643,156 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"giGSC":[function() {},{}]},["j2WyO","1xC6H","2Ew96"], "2Ew96", "parcelRequire164e")
+},{"7422ead32dcc1e6b":"786KC"}],"g6ZGj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0b04.prelude(module);
 
-//# sourceMappingURL=index.7826abd7.js.map
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shimmer-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-cards",
+                children: "Shimmer"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 4,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-cards",
+                children: "Shimmer"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 5,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-cards",
+                children: "Shimmer"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 3,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hsJbF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bfed.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _dummyData = require("../data/dummyData");
+const Header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "logo-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: (0, _dummyData.LOGO_URL),
+                    alt: "logo"
+                }, void 0, false, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 6,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 5,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About Us"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact Us"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 13,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Header.js",
+        lineNumber: 4,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$bfed.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../data/dummyData":"hnsmb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["bgABq","1xC6H","2kQhy"], "2kQhy", "parcelRequire164e")
+
+//# sourceMappingURL=index.7271efb6.js.map

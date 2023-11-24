@@ -51,6 +51,7 @@ li {
 
 .food-image {
     width: 100%;
+    height: 200px;
 
 }
 
@@ -60,3 +61,24 @@ li {
     margin: 5px;
 }
 
+.top-rated-btn {
+    margin: 10px 0;
+    padding: 7px 20px;
+}
+
+.search-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2px;
+}
+
+.search-filter input {
+    height: 30px;
+    padding: 5px;
+}
+
+.search-btn {
+    padding: 5px;
+    margin-left: 5px;
+}
