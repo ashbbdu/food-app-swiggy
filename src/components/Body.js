@@ -6,13 +6,15 @@ import Shimmer from "./Shimmer";
 const Body = () => {
   const [searchText, setSearchText] = useState("");
 
-  console.log(searchText , "search Text")
+  console.log(searchText, "search Text");
   const [restData, setRestData] = useState([]);
-  const [filteredRestaurant , setFilteredRestaurant] =  useState([])  //to resolve the filter issue
+  const [filteredRestaurant, setFilteredRestaurant] = useState([]); //to resolve the filter issue
   const handleTopRated = () => {
     const data = restData.filter((res) => res.info.avgRating > 4);
     setRestData(data);
   };
+
+  
 
   const fetchRestaurantData = async () => {
     const resp = await fetch(
@@ -22,7 +24,7 @@ const Body = () => {
     const { restaurants } =
       data.data.cards[2].card.card?.gridElements?.infoWithStyle;
     setRestData(restaurants);
-    setFilteredRestaurant(restaurants)  //to resolve the filter issue
+    setFilteredRestaurant(restaurants); //to resolve the filter issue
   };
 
   useEffect(() => {
@@ -43,8 +45,12 @@ const Body = () => {
               />
               <button
                 onClick={() => {
-                  const searchedRest = restData.filter(res => res.info.name.toLowerCase().includes(searchText.toLowerCase() ))
-                  setFilteredRestaurant(searchedRest)
+                  const searchedRest = restData.filter((res) =>
+                    res.info.name
+                      .toLowerCase()
+                      .includes(searchText.toLowerCase())
+                  );
+                  setFilteredRestaurant(searchedRest);
                 }}
                 className="search-btn"
               >
