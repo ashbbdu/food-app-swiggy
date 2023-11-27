@@ -1,11 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { imagePrefix } from "../data/dummyData";
 
-const RestaurantCard = ({ restData }) => {
-  const { avgRating, cuisines, name, costForTwo, sla, cloudinaryImageId } =
+const RestaurantCard = ({ restData  }) => {
+  const { avgRating, cuisines, name, costForTwo, sla, cloudinaryImageId , id } =
     restData;
+    
+   
   return (
-    <div className="res-card">
+   <Link to={`/restaurant/${id}`}>
+     <div className="res-card">
       <img
         src={`${imagePrefix}${cloudinaryImageId}`}
         className="food-image"
@@ -17,6 +21,7 @@ const RestaurantCard = ({ restData }) => {
       <h4>{sla.slaString}</h4>
       <h4>{costForTwo}</h4>
     </div>
+   </Link>
   );
 };
 

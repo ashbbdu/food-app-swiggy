@@ -31,7 +31,7 @@ const Header = () => {
             <Link href="#">Cart</Link>
           </li>
           <li>
-            <button onClick={() => setStatus((prev) => !prev)}>
+            <button className="btn" onClick={() => setStatus((prev) => !prev)}>
               {status ? "Login" : "Logout"}
             </button>
           </li>

@@ -37,7 +37,9 @@ li {
 .res-card {
   cursor: pointer;
   background-color: #f6f6f6;
-  width: 200px;
+  border: 1px solid #0000;
+  width: 280px;
+  height: 450px;
   padding: 5px;
 }
 
@@ -80,6 +82,15 @@ li {
 .search-btn {
   margin-left: 5px;
   padding: 5px;
+}
+
+.btn {
+  padding: 5px 20px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
