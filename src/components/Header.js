@@ -9,15 +9,16 @@ const Header = () => {
   // If we  provide empty dependency array useEffect will run on the very first render
   useEffect(() => {
     console.log("Checking useeffect");
+    
   }, []);
 
   return (
-    <div className="header">
-      <div className="logo-container">
-        <img className="logo" src={LOGO_URL} alt="logo" />
+    <div className="flex items-center justify-between px-6 py-0 border">
+      <div>
+        <img  className="w-[130px]" src={LOGO_URL} alt="logo" />
       </div>
       <div className="nav-items">
-        <ul>
+        <ul className="flex items-center justify-between gap-4">
           <li>
             <Link to="/">Home</Link>
           </li>

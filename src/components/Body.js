@@ -30,19 +30,27 @@ const Body = () => {
 
   useEffect(() => {
     fetchRestaurantData();
+   const timer = setInterval(() => {
+      console.log("Namaste React Use Effect")
+    },1000)
+    return () => {
+      // this return will run when we leave the component/page , we can say it is kind of unmounting phase
+      clearInterval(timer)
+    }
   }, []);
 
   return (
     <>
       {restData.length > 0 ? (
-        <div className="body">
-          <div className="search-filter">
-            <div className="search">
+        <div className="">
+          <div className="flex items-center justify-between py-3">
+            <div className="">
               <input
                 type="text"
                 placeholder="Search Restaurant"
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
+                className="border h-8 px-2"
               />
               <button
                 onClick={() => {
@@ -53,19 +61,19 @@ const Body = () => {
                   );
                   setFilteredRestaurant(searchedRest);
                 }}
-                className="search-btn"
+                className="py-1 px-2 mx-2 rounded-md bg-red-200"
               >
-                Search
+                Search 
               </button>
             </div>
             <div>
-              <button className="top-rated-btn" onClick={handleTopRated}>
+              <button className="py-1 px-2 mx-2 rounded-md bg-green-200" onClick={handleTopRated}>
                 Top Rated Restaurants
               </button>
             </div>
           </div>
           <div>
-          <div className="restaurant-container">
+          <div className="grid sm:grid-cols-3  gap-4 md:grid-cols-4 lg:grid-cols-5">
             {filteredRestaurant.map((res) => {
               return <RestaurantCard key={res.info.id} restData={res.info} />;
             })}

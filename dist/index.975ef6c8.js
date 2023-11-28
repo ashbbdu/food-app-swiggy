@@ -33598,8 +33598,471 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "Footer"
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+        class: "footer-1 bg-gray-100 py-8 sm:py-12 mt-4",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            class: "container mx-auto px-4",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "sm:flex sm:flex-wrap sm:-mx-4 md:py-4",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "px-4 sm:w-1/2 md:w-1/4 xl:w-1/6",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                class: "text-xl font-bold mb-6",
+                                children: "Features"
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 7,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                class: "list-none footer-links",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Cool stuff"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 10,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 9,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Random feature"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 13,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 12,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Team feature"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 16,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 15,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Stuff for developers"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 19,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 18,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Another one"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 22,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 21,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Last time"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 25,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 24,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 8,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 6,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                class: "text-xl font-bold mb-6",
+                                children: "Resources"
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 30,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                class: "list-none footer-links",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Resource"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 33,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 32,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Resource name"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 36,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 35,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Another resource"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 39,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 38,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Final resource"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 42,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 41,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                class: "text-xl font-bold mb-6",
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 47,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                class: "list-none footer-links",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Team"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 50,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 49,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Locations"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 53,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 52,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Privacy"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 56,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 55,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Terms"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 59,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 58,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 48,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                class: "text-xl font-bold mb-6",
+                                children: "Help"
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 64,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                class: "list-none footer-links",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Support"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 67,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 66,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Help Center"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 70,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 69,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        class: "mb-2",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            class: "border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800",
+                                            children: "Contact Us"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 73,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 72,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 65,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                                class: "text-xl font-bold mb-6 sm:text-center xl:text-left",
+                                children: "Stay connected"
+                            }, void 0, false, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 78,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                class: "flex sm:justify-center xl:justify-start",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "",
+                                        class: "w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                            class: "fab fa-facebook"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 81,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 80,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "",
+                                        class: "w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                            class: "fab fa-twitter"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 84,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 83,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "",
+                                        class: "w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                            class: "fab fa-google-plus-g"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.js",
+                                            lineNumber: 87,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.js",
+                                        lineNumber: 86,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Footer.js",
+                                lineNumber: 79,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Footer.js",
+                        lineNumber: 77,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Footer.js",
+                lineNumber: 5,
+                columnNumber: 7
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Footer.js",
+            lineNumber: 4,
+            columnNumber: 5
+        }, undefined)
     }, void 0, false, {
         fileName: "src/components/Footer.js",
         lineNumber: 3,
@@ -33778,12 +34241,11 @@ const Header = ()=>{
         console.log("Checking useeffect");
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "flex items-center justify-between px-6 py-0 border",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "logo-container",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "logo",
+                    className: "w-[130px]",
                     src: (0, _dummyData.LOGO_URL),
                     alt: "logo"
                 }, void 0, false, {
@@ -33799,6 +34261,7 @@ const Header = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "nav-items",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "flex items-center justify-between gap-4",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -34927,57 +35390,62 @@ var _about = require("./pages/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
 var _contactUs = require("./pages/ContactUs");
 var _contactUsDefault = parcelHelpers.interopDefault(_contactUs);
-var _myContact = require("./pages/MyContact");
-var _myContactDefault = parcelHelpers.interopDefault(_myContact);
 var _restaurantDetails = require("./pages/RestaurantDetails");
 var _restaurantDetailsDefault = parcelHelpers.interopDefault(_restaurantDetails);
 const Router = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, void 0, void 0)
-            }, void 0, false, {
-                fileName: "src/routes.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, void 0, void 0)
-            }, void 0, false, {
-                fileName: "src/routes.js",
-                lineNumber: 12,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/contact",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsDefault.default), {}, void 0, false, void 0, void 0)
-            }, void 0, false, {
-                fileName: "src/routes.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "/restaurant/:id",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantDetailsDefault.default), {}, void 0, false, void 0, void 0)
-            }, void 0, false, {
-                fileName: "src/routes.js",
-                lineNumber: 15,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "*",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorPageDefault.default), {}, void 0, false, void 0, void 0)
-            }, void 0, false, {
-                fileName: "src/routes.js",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "px-2",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/routes.js",
+                    lineNumber: 11,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/about",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/routes.js",
+                    lineNumber: 12,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/contact",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/routes.js",
+                    lineNumber: 14,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "/restaurant/:id",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantDetailsDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/routes.js",
+                    lineNumber: 15,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    path: "*",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorPageDefault.default), {}, void 0, false, void 0, void 0)
+                }, void 0, false, {
+                    fileName: "src/routes.js",
+                    lineNumber: 16,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/routes.js",
+            lineNumber: 10,
+            columnNumber: 8
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/routes.js",
-        lineNumber: 10,
+        lineNumber: 9,
         columnNumber: 10
     }, undefined);
 };
@@ -34991,7 +35459,7 @@ $RefreshReg$(_c, "Router");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./components/Body":"8yaV8","./components/ErrorPage":"8FX8S","./pages/About":"dep5E","./pages/ContactUs":"j9ZX0","./pages/MyContact":"468CQ","./pages/RestaurantDetails":"aj30y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./components/Body":"8yaV8","./components/ErrorPage":"8FX8S","./pages/About":"dep5E","./pages/ContactUs":"j9ZX0","./pages/RestaurantDetails":"aj30y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35032,25 +35500,33 @@ const Body = ()=>{
     };
     (0, _react.useEffect)(()=>{
         fetchRestaurantData();
+        const timer = setInterval(()=>{
+            console.log("Namaste React Use Effect");
+        }, 1000);
+        return ()=>{
+            // this return will run when we leave the component/page , we can say it is kind of unmounting phase
+            clearInterval(timer);
+        };
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: restData.length > 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "body",
+            className: "",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "search-filter",
+                    className: "flex items-center justify-between py-3",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "search",
+                            className: "",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                     type: "text",
                                     placeholder: "Search Restaurant",
                                     value: searchText,
-                                    onChange: (e)=>setSearchText(e.target.value)
+                                    onChange: (e)=>setSearchText(e.target.value),
+                                    className: "border h-8 px-2"
                                 }, void 0, false, {
                                     fileName: "src/components/Body.js",
-                                    lineNumber: 33,
+                                    lineNumber: 40,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35058,70 +35534,70 @@ const Body = ()=>{
                                         const searchedRest = restData.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                                         setFilteredRestaurant(searchedRest);
                                     },
-                                    className: "search-btn",
+                                    className: "py-1 px-2 mx-2 rounded-md bg-red-200",
                                     children: "Search"
                                 }, void 0, false, {
                                     fileName: "src/components/Body.js",
-                                    lineNumber: 34,
+                                    lineNumber: 41,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 32,
+                            lineNumber: 39,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "top-rated-btn",
+                                className: "py-1 px-2 mx-2 rounded-md bg-green-200",
                                 onClick: handleTopRated,
                                 children: "Top Rated Restaurants"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 42,
+                                lineNumber: 49,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 41,
+                            lineNumber: 48,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 31,
+                    lineNumber: 38,
                     columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "restaurant-container",
+                        className: "grid sm:grid-cols-3  gap-4 md:grid-cols-4 lg:grid-cols-5",
                         children: filteredRestaurant.map((res)=>{
                             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                                 restData: res.info
                             }, res.info.id, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 50,
+                                lineNumber: 57,
                                 columnNumber: 20
                             }, undefined);
                         })
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 48,
+                        lineNumber: 55,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 47,
+                    lineNumber: 54,
                     columnNumber: 11
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Body.js",
-            lineNumber: 30,
+            lineNumber: 37,
             columnNumber: 30
         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
             fileName: "src/components/Body.js",
-            lineNumber: 54,
+            lineNumber: 61,
             columnNumber: 18
         }, undefined)
     }, void 0, false);
@@ -35153,60 +35629,67 @@ var _reactRouterDom = require("react-router-dom");
 var _dummyData = require("../data/dummyData");
 const RestaurantCard = ({ restData })=>{
     const { avgRating, cuisines, name, costForTwo, sla, cloudinaryImageId, id } = restData;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-        to: `/restaurant/${id}`,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "res-card",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: `${(0, _dummyData.imagePrefix)}${cloudinaryImageId}`,
-                    className: "food-image",
-                    alt: "food"
-                }, void 0, false, {
-                    fileName: "src/components/RestaurantCard.js",
-                    lineNumber: 18,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: name
-                }, void 0, false, {
-                    fileName: "src/components/RestaurantCard.js",
-                    lineNumber: 19,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: cuisines.join(", ")
-                }, void 0, false, {
-                    fileName: "src/components/RestaurantCard.js",
-                    lineNumber: 20,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: avgRating
-                }, void 0, false, {
-                    fileName: "src/components/RestaurantCard.js",
-                    lineNumber: 21,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: sla.slaString
-                }, void 0, false, {
-                    fileName: "src/components/RestaurantCard.js",
-                    lineNumber: 22,
-                    columnNumber: 7
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: costForTwo
-                }, void 0, false, {
-                    fileName: "src/components/RestaurantCard.js",
-                    lineNumber: 23,
-                    columnNumber: 7
-                }, undefined)
-            ]
-        }, void 0, true, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "border mt-4 p-2 rounded-lg  hover:scale-105 transition-all duration-200",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+            to: `/restaurant/${id}`,
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: `${(0, _dummyData.imagePrefix)}${cloudinaryImageId}`,
+                        className: "h-[250px] w-full rounded-lg",
+                        alt: "food"
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 19,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: name
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 20,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        children: cuisines.join(", ")
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 21,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        children: avgRating
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 22,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        children: sla.slaString
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 23,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        children: costForTwo
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantCard.js",
+                        lineNumber: 24,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantCard.js",
+                lineNumber: 18,
+                columnNumber: 6
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/components/RestaurantCard.js",
             lineNumber: 17,
-            columnNumber: 6
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/RestaurantCard.js",
@@ -35385,20 +35868,58 @@ class UserCardClass extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
         this.state = {
-            count: 0
+            count: 0,
+            userInfo: {
+                name: "Dummy"
+            }
         };
         console.log("Child Constructor");
     }
+    getGitHubData = async ()=>{
+        const response = await fetch("https://api.github.com/users/ashbbdu");
+        const data = await response.json();
+        console.log(data, "data");
+        this.setState({
+            userInfo: data
+        });
+    };
     componentDidMount() {
+        this.getGitHubData();
         console.log("Child Component Did Mount");
     }
+    componentDidUpdate(prevProps, prevState) {
+        // For two dependecy in useEffect
+        // if(this.state.count !== prevState.count || this.state.count !== prevState.count2){
+        // do something
+        // }
+        // console.log("Component Did Update")
+        this.timer = setInterval(()=>{
+            console.log("Namaste React Class");
+        }, 1000);
+    }
+    componentWillUnmount() {
+        clearInterval(this.timer);
+        console.log("Component Will Unmount");
+    }
     render() {
-        const { name, location, contact } = this.props;
+        const { name, location, public_repos, avatar_url } = this.state.userInfo;
+        // const {name , location , contact} = this.props;
         const { count } = this.state;
         console.log("Child Render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "user-card-class",
             children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    style: {
+                        borderRadius: "50%"
+                    },
+                    src: avatar_url,
+                    alt: "profile pic"
+                }, void 0, false, {
+                    fileName: "src/components/UserCardClass.js",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: [
                         "Name : ",
@@ -35407,7 +35928,7 @@ class UserCardClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserCardClass.js",
-                    lineNumber: 24,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35418,17 +35939,17 @@ class UserCardClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserCardClass.js",
-                    lineNumber: 25,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                     children: [
-                        "Contact : ",
-                        contact
+                        "Total Repositories : ",
+                        public_repos
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserCardClass.js",
-                    lineNumber: 26,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -35438,7 +35959,7 @@ class UserCardClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserCardClass.js",
-                    lineNumber: 27,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35448,7 +35969,7 @@ class UserCardClass extends (0, _reactDefault.default).Component {
                     children: "Increment"
                 }, void 0, false, {
                     fileName: "src/components/UserCardClass.js",
-                    lineNumber: 28,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35458,13 +35979,13 @@ class UserCardClass extends (0, _reactDefault.default).Component {
                     children: "Decrement"
                 }, void 0, false, {
                     fileName: "src/components/UserCardClass.js",
-                    lineNumber: 31,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserCardClass.js",
-            lineNumber: 23,
+            lineNumber: 51,
             columnNumber: 12
         }, this);
     }
@@ -35561,37 +36082,6 @@ var _c;
 $RefreshReg$(_c, "ContactUs");
 
   $parcel$ReactRefreshHelpers$f0b4.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"468CQ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$76c1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$76c1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const MyContact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "MyContact"
-    }, void 0, false, {
-        fileName: "src/pages/MyContact.js",
-        lineNumber: 3,
-        columnNumber: 10
-    }, undefined);
-};
-_c = MyContact;
-exports.default = MyContact;
-var _c;
-$RefreshReg$(_c, "MyContact");
-
-  $parcel$ReactRefreshHelpers$76c1.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

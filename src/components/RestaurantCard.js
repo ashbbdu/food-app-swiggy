@@ -8,11 +8,12 @@ const RestaurantCard = ({ restData  }) => {
     
    
   return (
-   <Link to={`/restaurant/${id}`}>
+   <div className="border mt-4 p-2 rounded-lg  hover:scale-105 transition-all duration-200">
+      <Link to={`/restaurant/${id}`}>
      <div className="res-card">
       <img
         src={`${imagePrefix}${cloudinaryImageId}`}
-        className="food-image"
+        className="h-[250px] w-full rounded-lg"
         alt="food"
       />
       <h3>{name}</h3>
@@ -22,6 +23,7 @@ const RestaurantCard = ({ restData  }) => {
       <h4>{costForTwo}</h4>
     </div>
    </Link>
+   </div>
   );
 };
 

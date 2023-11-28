@@ -4,12 +4,12 @@ import Body from "./components/Body";
 import ErrorPage from "./components/ErrorPage";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
-import MyContact from "./pages/MyContact";
 import RestaurantDetails from "./pages/RestaurantDetails";
 
 const Router = () => {
   return (
-    <Routes>
+   <div className="px-2">
+       <Routes>
       <Route path="/" element={<Body />} />
       <Route path="/about" element={<About />} />
       {/* <Route path="/contact/mycontact" element={<MyContact />}  /> */}
@@ -17,6 +17,7 @@ const Router = () => {
       <Route path="/restaurant/:id" element={<RestaurantDetails />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
+   </div>
   );
 };
 

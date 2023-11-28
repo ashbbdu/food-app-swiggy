@@ -1,10 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#root {
+/* #root {
    padding: 0 10px;
 }
 
@@ -96,4 +100,4 @@ li {
 a {
     color : black;
     text-decoration: none;
-}
+} */
