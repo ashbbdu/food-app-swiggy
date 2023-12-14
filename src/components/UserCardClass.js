@@ -7,9 +7,7 @@ class UserCardClass extends React.Component {
             count : 0,
             userInfo : {name : "Dummy"}
         }
-        console.log("Child Constructor")
-      
-
+        console.log("Child Constructor") 
     }
 
     getGitHubData = async () => {

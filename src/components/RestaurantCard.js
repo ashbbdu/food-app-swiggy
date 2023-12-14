@@ -8,7 +8,7 @@ const RestaurantCard = ({ restData  }) => {
     
    
   return (
-   <div className="border mt-4 p-2 rounded-lg  hover:scale-105 transition-all duration-200">
+   <div className="border mt-4 p-2 rounded-lg bg-gray-50 hover:scale-105 transition-all duration-300">
       <Link to={`/restaurant/${id}`}>
      <div className="res-card">
       <img
@@ -26,5 +26,19 @@ const RestaurantCard = ({ restData  }) => {
    </div>
   );
 };
+
+
+export const WithPromotedLael = (RestaurantCard) => {
+    return ({restData}) => {
+      console.log(restData , "RestData")
+      return (
+        <div className="flex">
+          <label className="absolute bg-black text-white rounded-md">Promoted</label>
+          <RestaurantCard restData={restData} />
+      
+        </div>
+       )
+    }
+}
 
 export default RestaurantCard;

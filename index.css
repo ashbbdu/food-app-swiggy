@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+.acc-header a {
+    padding : 15px 10px;
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
 /* #root {
    padding: 0 10px;
 }
