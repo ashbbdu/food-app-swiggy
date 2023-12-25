@@ -1,7 +1,7 @@
 import React from "react";
 import UserCardClass from "../components/UserCardClass";
 import UserCard from "../components/UserCard";
-
+import UserContext from "../utils/UserContext";
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -22,6 +22,12 @@ class About extends React.Component {
           location={"Lucknow , UP"}
           contact={"7007823127"}
         />
+        {/* Using context in class based components */}
+        <UserContext.Consumer>
+          {
+            (data) => <div>{data.loggedInUser}</div>
+          }
+        </UserContext.Consumer>
       </>
     );
   }

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { imagePrefix } from "../data/dummyData";
+import UserContext from "../utils/UserContext";
 
 const RestaurantCard = ({ restData  }) => {
+  const {loggedInUser} = useContext(UserContext)
   const { avgRating, cuisines, name, costForTwo, sla, cloudinaryImageId , id } =
     restData;
     
@@ -21,6 +23,7 @@ const RestaurantCard = ({ restData  }) => {
       <h4>{avgRating}</h4>
       <h4>{sla.slaString}</h4>
       <h4>{costForTwo}</h4>
+      <h4>Logged In User : {loggedInUser}</h4>
     </div>
    </Link>
    </div>
@@ -30,7 +33,7 @@ const RestaurantCard = ({ restData  }) => {
 
 export const WithPromotedLael = (RestaurantCard) => {
     return ({restData}) => {
-      console.log(restData , "RestData")
+      // console.log(restData , "RestData")
       return (
         <div className="flex">
           <label className="absolute bg-black text-white rounded-md">Promoted</label>

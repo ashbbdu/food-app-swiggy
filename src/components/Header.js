@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { LOGO_URL } from "../data/dummyData";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [status, setStatus] = useState(true);
+  const {loggedInUser , token} = useContext(UserContext)
+
+
 
   // If we do not provide dependency array useEffect will run on every render
   // If we  provide empty dependency array useEffect will run on the very first render
@@ -30,6 +34,9 @@ const Header = () => {
           </li>
           <li>
             <Link href="#">Cart</Link>
+          </li>
+          <li>
+            <Link>{loggedInUser}</Link>
           </li>
           <li>
             <button className="btn" onClick={() => setStatus((prev) => !prev)}>

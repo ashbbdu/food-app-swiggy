@@ -4,7 +4,11 @@ import RestaurantCategory from "../components/RestaurantCategory";
 
 const RestaurantDetails = () => {
   const [restaurantData, setRestaurantData] = useState({});
-  const [categoryList , setCategoryList] = useState([])
+  const [categoryList, setCategoryList] = useState([]);
+
+  // TO control expand and collapse feature
+  const [show, setShow] = useState(1);
+
 
   const { id } = useParams();
   useEffect(() => {
@@ -22,10 +26,16 @@ const RestaurantDetails = () => {
     //   data?.data.cards[2]?.groupedCard?.cardGroupMap?.REGULAR.cards,
     //   "card details"
     // );
-    setCategoryList(data?.data.cards[2]?.groupedCard?.cardGroupMap?.REGULAR.cards)
+    setCategoryList(
+      data?.data.cards[2]?.groupedCard?.cardGroupMap?.REGULAR.cards
+    );
   };
 
-  const catergories =  categoryList.filter(c => c?.card?.card["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
+  const catergories = categoryList.filter(
+    (c) =>
+      c?.card?.card["@type"] ===
+      "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+  );
   // console.log(catergories , "categories")
 
   return (
@@ -38,17 +48,18 @@ const RestaurantDetails = () => {
         <li>Pizza</li>
       </ul>
       <div>
-        {
-          categoryList.map((res , index) => {
-            return (
-              <div className="my-4" key={index}>
-                 <RestaurantCategory catergoryData={res} />
-              </div>
-             
-            )
-          })
-        }
-       
+        {categoryList.map((res, index) => {
+          return (
+            <div className="my-4" key={index}>
+              <RestaurantCategory 
+              catergoryData={res}
+              setShow={setShow}
+              index={index}
+              showItem={index === show && true}
+               />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

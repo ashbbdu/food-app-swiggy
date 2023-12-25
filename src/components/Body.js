@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 // import { restaurantData } from "../data/dummyData";
 import RestaurantCard, { WithPromotedLael } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-  const [searchText, setSearchText] = useState("");
 
+  const [searchText, setSearchText] = useState("");
   searchText, "search Text";
   const [restData, setRestData] = useState([]);
   restData, "restData";
@@ -34,10 +34,7 @@ const Body = () => {
     setFilteredRestaurant(
       data.data.cards[2].card.card?.gridElements?.infoWithStyle?.restaurants
     ); //to resolve the filter issue
-    console.log(
-      data.data.cards[2].card.card?.gridElements?.infoWithStyle?.restaurants,
-      "ash"
-    );
+    console.log(data.data.cards[2].card.card, "ash");
   };
 
   useEffect(() => {
@@ -90,20 +87,35 @@ const Body = () => {
           <div>
             <div className="grid sm:grid-cols-3  gap-4 md:grid-cols-4 lg:grid-cols-5">
               {filteredRestaurant.map((res) => {
-                if( res.info.avgRating > 4) {
-                  return  <RestaurantWithPromoted key={res.info.id} restData={res.info} />
+                if (res.info.avgRating > 4) {
+                  return (
+                   <>
+                    <RestaurantWithPromoted
+                      key={res.info.id}
+                      restData={res.info}
+                    />
+      
+                    </>
+                    
+                  );
                 } else {
-                  return <RestaurantCard key={res.info.id} restData={res.info} />
+                  return (
+                   <>
+                     <RestaurantCard key={res.info.id} restData={res.info} />
+                
+                   </>
+                  );
                 }
                 // console.log(res.info.avgRating , "Rating")
                 // return <RestaurantCard key={res.info.id} restData={res.info} />;
-              // return  <RestaurantWithPromoted key={res.info.id} restData={res.info} />
+                // return  <RestaurantWithPromoted key={res.info.id} restData={res.info} />
                 // {
                 //   res.info.avgRating < 4 ? ( <RestaurantWithPromoted key={res.info.id} restData={res.info} />) : (<RestaurantCard key={res.info.id} restData={res.info} /> );
                 // }
               })}
             </div>
           </div>
+
         </div>
       ) : (
         <Shimmer />
