@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { Provider } from "react-redux";
 import "../index.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Router from "./routes";
+import store from "./store/store";
 import UserContext from "./utils/UserContext";
 
 const AppLayout = () => {
@@ -14,19 +16,20 @@ const AppLayout = () => {
   useEffect(() => {
     const data = {
       loggedInUser: "Ashish",
-      token: "123lkjasdfo8asufjlkj",
     };
     setUserInfo(data);
   }, []);
 
   return (
-    <UserContext.Provider value={userInfo}>
-     <UserContext.Provider value={{loggedInUser : "Naman"}}>
+    <Provider store={store}>
+    <UserContext.Provider value={{userInfo : userInfo  , setUserInfo}}>
+     <UserContext.Provider value={{loggedInUser : "Naman" }}>
       <Header />
      </UserContext.Provider>
       <Router />
       <Footer />
     </UserContext.Provider>
+    </Provider>
   );
 };
 

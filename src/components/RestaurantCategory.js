@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import { imagePrefix } from "../data/dummyData";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../store/slices/cartSlice";
 
 const RestaurantCategory = ({ catergoryData , showItem , setShow , index }) => {
   const { title, itemCards } = catergoryData.card.card;
+  const dispatch = useDispatch()
+
+
+  const addCart = (data) => {
+    dispatch(addToCart(data))
+  }
 
   return (
     <div className="card">
@@ -19,6 +27,7 @@ const RestaurantCategory = ({ catergoryData , showItem , setShow , index }) => {
             showItem &&  <div>
             {itemCards?.map((res, index) => {
               const { name, price, description, imageId } = res?.card?.info;
+              console.log(res?.card?.info , "info");
               return (
                 <div className="px-2 mt-2 text-md font-semibold " key={index}>
                   <div className="flex items-center justify-between my-4">
@@ -38,7 +47,7 @@ const RestaurantCategory = ({ catergoryData , showItem , setShow , index }) => {
                         className="w-[120px] h-[80px]"
                       />
                       <div className="absolute bottom-[-10px] left-[30%]">
-                        <button className="px-2 py-1 text-sm text-white font-normal bg-black">
+                        <button onClick={() => addCart(res?.card?.info)} className="px-2 py-1 text-sm text-white font-normal bg-black">
                           Add +
                         </button>
                       </div>

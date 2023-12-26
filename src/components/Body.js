@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
+import UserContext from "../utils/UserContext";
 // import { restaurantData } from "../data/dummyData";
 import RestaurantCard, { WithPromotedLael } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-
+  const { setUserInfo, userInfo } = useContext(UserContext);
+  const { loggedInUser } = userInfo;
   const [searchText, setSearchText] = useState("");
   searchText, "search Text";
   const [restData, setRestData] = useState([]);
@@ -74,6 +76,17 @@ const Body = () => {
               >
                 Search
               </button>
+              <label>User Name : </label>
+              <input
+                type="text"
+                value={userInfo.loggedInUser}
+                onChange={(e) =>
+                  setUserInfo({
+                    loggedInUser: e.target.value,
+                  })
+                }
+                className="border border-black px-2"
+              />
             </div>
             <div>
               <button
@@ -89,21 +102,14 @@ const Body = () => {
               {filteredRestaurant.map((res) => {
                 if (res.info.avgRating > 4) {
                   return (
-                   <>
                     <RestaurantWithPromoted
                       key={res.info.id}
                       restData={res.info}
                     />
-      
-                    </>
-                    
                   );
                 } else {
                   return (
-                   <>
-                     <RestaurantCard key={res.info.id} restData={res.info} />
-                
-                   </>
+                    <RestaurantCard key={res.info.id} restData={res.info} />
                   );
                 }
                 // console.log(res.info.avgRating , "Rating")
@@ -115,7 +121,6 @@ const Body = () => {
               })}
             </div>
           </div>
-
         </div>
       ) : (
         <Shimmer />

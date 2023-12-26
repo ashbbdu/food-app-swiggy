@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { LOGO_URL } from "../data/dummyData";
 import UserContext from "../utils/UserContext";
@@ -6,6 +7,8 @@ import UserContext from "../utils/UserContext";
 const Header = () => {
   const [status, setStatus] = useState(true);
   const {loggedInUser , token} = useContext(UserContext)
+  const {cartItems} = useSelector(state => state.cart)
+  console.log(cartItems , "cartitem");
 
 
 
@@ -33,7 +36,7 @@ const Header = () => {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li>
-            <Link href="#">Cart</Link>
+            <Link to="/cart">Cart<span className="absolute top-7">{cartItems.length}</span></Link>
           </li>
           <li>
             <Link>{loggedInUser}</Link>

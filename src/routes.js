@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Body from "./components/Body";
 import ErrorPage from "./components/ErrorPage";
 import About from "./pages/About";
+import Cart from "./pages/Cart";
 import ContactUs from "./pages/ContactUs";
 import RestaurantDetails from "./pages/RestaurantDetails";
 
@@ -15,6 +16,7 @@ const Router = () => {
       {/* <Route path="/contact/mycontact" element={<MyContact />}  /> */}
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/restaurant/:id" element={<RestaurantDetails />} />
+      <Route path="/cart" element={<Cart />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
    </div>
