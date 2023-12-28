@@ -5,8 +5,8 @@ import RestaurantCard, { WithPromotedLael } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-  const { setUserInfo, userInfo } = useContext(UserContext);
-  const { loggedInUser } = userInfo;
+  // const { setUserInfo, userInfo } = useContext(UserContext);
+  // const { loggedInUser } = userInfo;
   const [searchText, setSearchText] = useState("");
   searchText, "search Text";
   const [restData, setRestData] = useState([]);
@@ -31,23 +31,24 @@ const Body = () => {
     // const { restaurants } =
     //   data.data.cards[2].card.card?.gridElements?.infoWithStyle;
     setRestData(
-      data.data.cards[2].card.card?.gridElements?.infoWithStyle?.restaurants
+      data.data.cards[1].card.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredRestaurant(
-      data.data.cards[2].card.card?.gridElements?.infoWithStyle?.restaurants
+      data.data.cards[1].card.card?.gridElements?.infoWithStyle?.restaurants
     ); //to resolve the filter issue
     console.log(data.data.cards[2].card.card, "ash");
   };
 
   useEffect(() => {
-    fetchRestaurantData();
-    const timer = setInterval(() => {
-      console.log("Namaste React Use Effect");
-    }, 1000);
-    return () => {
-      // this return will run when we leave the component/page , we can say it is kind of unmounting phase
-      clearInterval(timer);
-    };
+  fetchRestaurantData();
+    // const timer = setInterval(() => {
+    //   console.log("Namaste React Use Effect");
+    // }, 1000);
+    // return () => {
+    //   // this return will run when we leave the component/page , we can say it is kind of unmounting phase
+    //   clearInterval(timer);
+    // };
+   
   }, []);
 
   return (
@@ -57,6 +58,7 @@ const Body = () => {
           <div className="flex items-center justify-between py-3">
             <div className="">
               <input
+                data-testid="search-input"
                 type="text"
                 placeholder="Search Restaurant"
                 value={searchText}
@@ -76,7 +78,7 @@ const Body = () => {
               >
                 Search
               </button>
-              <label>User Name : </label>
+              {/* <label>User Name : </label>
               <input
                 type="text"
                 value={userInfo.loggedInUser}
@@ -86,7 +88,7 @@ const Body = () => {
                   })
                 }
                 className="border border-black px-2"
-              />
+              /> */}
             </div>
             <div>
               <button
@@ -123,7 +125,8 @@ const Body = () => {
           </div>
         </div>
       ) : (
-        <Shimmer />
+        // <Shimmer />
+        <div>Loading...</div>
       )}
     </>
   );

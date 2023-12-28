@@ -21,6 +21,7 @@ const AppLayout = () => {
   }, []);
 
   return (
+
     <Provider store={store}>
     <UserContext.Provider value={{userInfo : userInfo  , setUserInfo}}>
      <UserContext.Provider value={{loggedInUser : "Naman" }}>
@@ -30,6 +31,7 @@ const AppLayout = () => {
       <Footer />
     </UserContext.Provider>
     </Provider>
+
   );
 };
 

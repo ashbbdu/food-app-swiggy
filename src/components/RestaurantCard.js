@@ -4,6 +4,7 @@ import { imagePrefix } from "../data/dummyData";
 import UserContext from "../utils/UserContext";
 
 const RestaurantCard = ({ restData  }) => {
+  console.log(restData , "rest data");
   const {userInfo} = useContext(UserContext)
   const { avgRating, cuisines, name, costForTwo, sla, cloudinaryImageId , id } =
     restData;
@@ -23,7 +24,7 @@ const RestaurantCard = ({ restData  }) => {
       <h4>{avgRating}</h4>
       <h4>{sla.slaString}</h4>
       <h4>{costForTwo}</h4>
-      <h4>Logged In User : {userInfo.loggedInUser}</h4>
+      {/* <h4>Logged In User : {userInfo.loggedInUser}</h4> */}
     </div>
    </Link>
    </div>

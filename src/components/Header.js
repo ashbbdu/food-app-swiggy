@@ -36,16 +36,16 @@ const Header = () => {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li>
-            <Link to="/cart">Cart<span className="absolute top-7">{cartItems.length}</span></Link>
+            <Link to="/cart">Cart {cartItems.length} items</Link>
           </li>
           <li>
             <Link>{loggedInUser}</Link>
           </li>
-          <li>
+ 
             <button className="btn" onClick={() => setStatus((prev) => !prev)}>
               {status ? "Login" : "Logout"}
             </button>
-          </li>
+  
         </ul>
       </div>
     </div>
