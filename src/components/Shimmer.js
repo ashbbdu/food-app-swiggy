@@ -1,4 +1,4 @@
-import { Skeleton } from "primereact/skeleton";
+// import { Skeleton } from "primereact/skeleton";
 import React from "react";
 import { dummyArr } from "../data/dummyData";
 
@@ -10,14 +10,14 @@ const Shimmer = () => {
       {
         dummyArr.map((res , index) => {
           return (
-            <div key={index} className="border-round border-1 surface-border p-4 surface-card bg-red">
+            <div key={index} className="border-round border-1 surface-border p-4 surface-card bg-gray-200 mt-4 rounded-md min-h-[250px]">
             <div className="flex mb-3">
             </div>
-            <Skeleton width="100%" height="220px"></Skeleton>
+            <div width="100%" height="220px"></div>
             <div className="">
-              <Skeleton width="70%" height="2rem" className="mt-2"></Skeleton>
-              <Skeleton width="50%" height="2rem" className="mt-2"></Skeleton>
-              <Skeleton width="30%" height="2rem" className="mt-2"></Skeleton>
+              <div width="70%" height="2rem" className="mt-2"></div>
+              <div width="50%" height="2rem" className="mt-2"></div>
+              <div width="30%" height="2rem" className="mt-2"></div>
             </div>
           </div>
           )

@@ -125,8 +125,8 @@ const Body = () => {
           </div>
         </div>
       ) : (
-        // <Shimmer />
-        <div>Loading...</div>
+        <Shimmer />
+        // <div>Loading...</div>
       )}
     </>
   );
